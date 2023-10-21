@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class Solution
+{
+public:
+int setKthbit(int N,int K){
+int mask=1<<K;
+int ans=N|mask;
+return ans;
+}
+};
+
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int N,K;
+cin >> N >> K;
+Solution ob;
+int ans=ob.setKthbit(N,K);
+cout << ans << endl;
+}
+return 0;
+}
